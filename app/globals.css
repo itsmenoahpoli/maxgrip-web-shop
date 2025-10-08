@@ -1,26 +1,73 @@
 @import "tailwindcss";
+@import "@fontsource/poppins/400.css";
+@import "@fontsource/poppins/500.css";
+@import "@fontsource/poppins/600.css";
+@import "@fontsource/poppins/700.css";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #E5E5E5;
+  --foreground: #111111;
+  --primary: #B12025;
+  --surface: #2C2C2C;
+  --white: #FFFFFF;
+  --muted: #6B7280;
+  --border: #E5E7EB;
+  --accent: #F3F4F6;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --color-primary: var(--primary);
+  --color-surface: var(--surface);
+  --color-white: var(--white);
+  --color-muted: var(--muted);
+  --color-border: var(--border);
+  --color-accent: var(--accent);
+  --font-sans: "Poppins", system-ui, sans-serif;
+  --font-mono: ui-monospace, "Cascadia Code", "Source Code Pro", Menlo, Monaco, Consolas, "DejaVu Sans Mono", monospace;
+  --radius-sm: 0.25rem;
+  --radius-md: 0.5rem;
+  --radius-lg: 0.75rem;
+  --radius-xl: 1rem;
+  --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+  --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+  --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+  --shadow-glow: 0 0 8px rgba(177, 32, 37, 0.6);
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
+}
+
+@utility hover-glow-red {
+  transition: box-shadow .2s ease, transform .2s ease;
+  @variant hover {
+    box-shadow: var(--shadow-glow), var(--shadow-lg);
+    transform: translateY(-2px);
+  }
+}
+
+@utility hover-scale {
+  transition: transform .2s ease;
+  @variant hover {
+    transform: scale(1.05);
+  }
+}
+
+@utility hover-bg-primary {
+  transition: background-color .2s ease;
+  @variant hover {
+    background-color: var(--primary);
+    color: var(--white);
+  }
+}
+
+@utility text-gradient {
+  background: linear-gradient(135deg, var(--primary), #E53E3E);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
