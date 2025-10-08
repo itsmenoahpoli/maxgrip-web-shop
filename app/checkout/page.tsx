@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { formatCurrency } from "../lib/currency";
+import { formatCurrency } from "../../lib/currency";
 import { motion } from "framer-motion";
 import { CreditCard, Lock, ArrowLeft, Check } from "lucide-react";
 import SubpageHero from "../../components/SubpageHero";
@@ -81,7 +81,7 @@ export default function CheckoutPage() {
           </div>
           <h1 className="text-3xl font-bold text-foreground mb-4">Order Confirmed!</h1>
           <p className="text-xl text-muted mb-8">
-            Thank you for your purchase. We'll send you a confirmation email shortly.
+            Thank you for your purchase. We&apos;ll send you a confirmation email shortly.
           </p>
           <div className="space-y-4">
             <Link

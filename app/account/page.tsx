@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { formatCurrency } from "../lib/currency";
+import { formatCurrency } from "../../lib/currency";
 import { motion } from "framer-motion";
 import { User, ShoppingBag, MapPin, CreditCard, Settings, Package, Star, Eye } from "lucide-react";
 import SubpageHero from "../../components/SubpageHero";

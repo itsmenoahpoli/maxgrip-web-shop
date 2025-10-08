@@ -68,7 +68,7 @@ export default function CartPage() {
             <ShoppingBag className="h-16 w-16 text-primary" />
           </motion.div>
           <h1 className="text-3xl font-bold text-foreground mb-4">Your cart is empty</h1>
-          <p className="text-xl text-muted mb-8">Looks like you haven't added any items to your cart yet.</p>
+          <p className="text-xl text-muted mb-8">Looks like you haven&apos;t added any items to your cart yet.</p>
           <Link
             href="/shop"
             className="inline-flex items-center gap-2 px-8 py-4 rounded-lg bg-primary text-white font-semibold hover-glow-red text-lg"

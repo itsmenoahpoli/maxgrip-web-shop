@@ -7,7 +7,7 @@ export default function Home() {
     {
       id: 1,
       title: "MaxGrip Pro Dart Set",
-      price: "$89.99",
+      price: 89.99,
       imageSrc: "/vercel.svg",
       rating: 5,
       reviews: 124
@@ -15,7 +15,7 @@ export default function Home() {
     {
       id: 2,
       title: "Custom Steel Points",
-      price: "$24.99",
+      price: 24.99,
       imageSrc: "/vercel.svg",
       rating: 5,
       reviews: 89
@@ -23,7 +23,7 @@ export default function Home() {
     {
       id: 3,
       title: "Tungsten Barrel Set",
-      price: "$149.99",
+      price: 149.99,
       imageSrc: "/vercel.svg",
       rating: 4,
       reviews: 67
@@ -31,7 +31,7 @@ export default function Home() {
     {
       id: 4,
       title: "Professional Flight Set",
-      price: "$12.99",
+      price: 12.99,
       imageSrc: "/vercel.svg",
       rating: 5,
       reviews: 203
@@ -208,7 +208,7 @@ export default function Home() {
                     <Star key={i} className="h-5 w-5 text-yellow-400 fill-current" />
                   ))}
                 </div>
-                <p className="text-muted mb-6 leading-relaxed">"{testimonial.comment}"</p>
+                <p className="text-muted mb-6 leading-relaxed">&quot;{testimonial.comment}&quot;</p>
                 <div className="flex items-center gap-4">
                   <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center">
                     <span className="text-primary font-bold text-lg">
@@ -237,7 +237,7 @@ export default function Home() {
             >
               <h3 className="text-4xl font-bold text-white mb-6">
                 Get in Touch
-                <span className="text-primary block">We're Here to Help</span>
+                <span className="text-primary block">We&apos;re Here to Help</span>
               </h3>
               <p className="text-xl text-white/90 mb-8 leading-relaxed">
                 Have questions about our products or need help choosing the right dart equipment? 

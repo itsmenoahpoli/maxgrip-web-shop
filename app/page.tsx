@@ -125,7 +125,7 @@ export default function Home() {
                     <span key={i} className="text-yellow-400 text-3xl">★</span>
                   ))}
                 </div>
-                <p className="text-gray-700 mb-6 leading-relaxed text-sm">"{testimonial.comment}"</p>
+                <p className="text-gray-700 mb-6 leading-relaxed text-sm">&quot;{testimonial.comment}&quot;</p>
                 <div className="flex items-center gap-3">
                   <div className="w-10 h-10 bg-red-100 rounded-full flex items-center justify-center">
                     <span className="text-red-600 font-bold text-sm">
